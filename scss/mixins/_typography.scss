@@ -1,0 +1,98 @@
+@mixin _liesa-design-typography(
+    $font-family,
+    $font-size,
+    $line-height,
+    $line-weight,
+    $letter-spacing
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $line-weight;
+  letter-spacing: $letter-spacing;
+}
+
+._liesa-design-display-large {
+  @include _liesa-design-typography('Poppins', 57px, 64px, 400, -0.25px);//
+}
+
+._liesa-design-display-medium {
+  @include _liesa-design-typography('Poppins', 45px, 52px, 400, 0px);//
+}
+
+._liesa-design-display-small {
+  @include _liesa-design-typography('Poppins', 36px, 44px, 400, 0px);//
+}
+
+._liesa-design-heading-large {
+  @include _liesa-design-typography('Poppins', 32px, 40px, 400, 0px);//
+}
+
+._liesa-design-heading-medium {
+  @include _liesa-design-typography('Poppins', 28px, 36px, 400, 0px);//
+}
+
+._liesa-design-heading-small {
+  @include _liesa-design-typography('Poppins', 24px, 32px, 400, 0px);//
+}
+
+._liesa-design-title-large {
+  @include _liesa-design-typography('Poppins', 22px, 28px, 400, 0px);//
+}
+
+._liesa-design-title-large-bold {
+  @include _liesa-design-typography('Poppins', 22px, 28px, 600, 0px);//
+}
+
+._liesa-design-title-medium {
+  @include _liesa-design-typography('Poppins', 16px, 20px, 500, +0.15px);//
+}
+
+._liesa-design-title-small {
+  @include _liesa-design-typography('Poppins', 14px, 20px, 500, +0.1px);//
+}
+
+._liesa-design-label-large {
+  @include _liesa-design-typography('Poppins', 14px, 20px, 500, +0.1px);//
+}
+
+._liesa-design-label-large-prominent {
+  @include _liesa-design-typography('Poppins', 14px, 20px, 600, +0.1px);
+}
+
+._liesa-design-label-medium {
+  @include _liesa-design-typography('Poppins', 12px, 16px, 500, +0.5px);
+}
+
+._liesa-design-label-medium-prominent {
+  @include _liesa-design-typography('Poppins', 12px, 16px, 700, +0.5px);
+}
+
+._liesa-design-label-small {
+  @include _liesa-design-typography('Poppins', 10px, 15px, 500, +0.5px);
+}
+
+._liesa-design-label-small-prominent {
+  @include _liesa-design-typography('Poppins', 10px, 15px, 700, +0.5px);
+}
+
+._liesa-design-label-extra-small {
+  @include _liesa-design-typography('Poppins', 8px, 13px, 500, +0.5px);
+}
+
+._liesa-design-body-large {
+  @include _liesa-design-typography('Poppins', 16px, 24px, 400, +0.5px);
+}
+
+._liesa-design-body-medium {
+  @include _liesa-design-typography('Poppins', 14px, 20px, 400, +0.25px);
+}
+
+._liesa-design-body-medium-prominent {
+  @include _liesa-design-typography('Poppins', 14px, 20px, 600, +0.25px);
+}
+
+._liesa-design-body-small {
+  @include _liesa-design-typography('Poppins', 12px, 16px, 400, +0.4px);
+}
+

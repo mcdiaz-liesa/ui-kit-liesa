@@ -1,0 +1,7 @@
+# .gitignore
+node_modules
+dist
+.env
+.npmrc
+package-lock.json
+.parcel-cache

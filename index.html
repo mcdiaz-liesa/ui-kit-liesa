@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>LIESA UI Kit</title>
+  <link rel="stylesheet" href="./scss/index.scss">
+  <link rel="stylesheet" href="./src/components/checkbox/checkbox.scss">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <h1>LIESA UI Kit</h1>
+  <section id="checkbox-demo"></section>
+  <script>
+    fetch('./src/components/checkbox/checkbox.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('checkbox-demo').innerHTML = html;
+      });
+  </script>
+</body>
+</html>

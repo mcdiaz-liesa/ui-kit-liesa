@@ -1,0 +1,238 @@
+$liesa-design-white: hsla(0, 0%, 100%, 1);
+$liesa-design-black: hsla(0, 0%, 0%, 1);
+$liesa-design-primary-10: hsla(202, 100%, 9%, 1);
+$liesa-design-primary-20: hsla(199, 100%, 15%, 1);
+$liesa-design-primary-30: hsla(199, 100%, 22%, 1);
+$liesa-design-primary-40: hsla(201, 83%, 35%, 1);
+$liesa-design-primary-50: hsla(201, 58%, 45%, 1);
+$liesa-design-primary-60: hsla(200, 52%, 55%, 1);
+$liesa-design-primary-70: hsla(199, 57%, 65%, 1);
+$liesa-design-primary-80: hsla(198, 65%, 74%, 1);
+$liesa-design-primary-90: hsla(198, 66%, 81%, 1);
+$liesa-design-primary-95: hsla(197, 65%, 90%, 1);
+$liesa-design-primary-99: hsla(197, 64%, 95%, 1);
+$liesa-design-secondary-10: hsla(149, 95%, 9%, 1);
+$liesa-design-secondary-20: hsla(149, 95%, 17%, 1);
+$liesa-design-secondary-30: hsla(149, 97%, 25%, 1);
+$liesa-design-secondary-40: hsla(149, 97%, 34%, 1);
+$liesa-design-secondary-50: hsla(149, 68%, 42%, 1);
+$liesa-design-secondary-60: hsla(149, 50%, 51%, 1);
+$liesa-design-secondary-70: hsla(149, 50%, 59%, 1);
+$liesa-design-secondary-80: hsla(149, 58%, 67%, 1);
+$liesa-design-secondary-90: hsla(147, 68%, 76%, 1);
+$liesa-design-secondary-95: hsla(147, 59%, 87%, 1);
+$liesa-design-secondary-99: hsla(147, 57%, 95%, 1);
+$liesa-design-tertiary-10: hsla(185, 100%, 7%, 1);
+$liesa-design-tertiary-20: hsla(185, 100%, 12%, 1);
+$liesa-design-tertiary-30: hsla(184, 100%, 17%, 1);
+$liesa-design-tertiary-40: hsla(184, 100%, 22%, 1);
+$liesa-design-tertiary-50: hsla(184, 100%, 28%, 1);
+$liesa-design-tertiary-60: hsla(185, 57%, 42%, 1);
+$liesa-design-tertiary-70: hsla(186, 50%, 54%, 1);
+$liesa-design-tertiary-80: hsla(186, 66%, 66%, 1);
+$liesa-design-tertiary-90: hsla(186, 96%, 78%, 1);
+$liesa-design-tertiary-95: hsla(187, 100%, 89%, 1);
+$liesa-design-tertiary-99: hsla(185, 100%, 98%, 1);
+$liesa-design-neutral-10: hsla(200, 5%, 11%, 1);
+$liesa-design-neutral-20: hsla(220, 3%, 19%, 1);
+$liesa-design-neutral-30: hsla(210, 3%, 28%, 1);
+$liesa-design-neutral-40: hsla(220, 2%, 37%, 1);
+$liesa-design-neutral-50: hsla(220, 1%, 47%, 1);
+$liesa-design-neutral-60: hsla(220, 1%, 57%, 1);
+$liesa-design-neutral-70: hsla(240, 1%, 67%, 1);
+$liesa-design-neutral-80: hsla(240, 2%, 78%, 1);
+$liesa-design-neutral-90: hsla(240, 4%, 89%, 1);
+$liesa-design-neutral-95: hsla(270, 7%, 95%, 1);
+$liesa-design-neutral-99: hsla(240, 50%, 99%, 1);
+$liesa-design-neutral-variants-10: hsla(207, 16%, 11%, 1);
+$liesa-design-neutral-variants-20: hsla(207, 9%, 19%, 1);
+$liesa-design-neutral-variants-30: hsla(213, 6%, 28%, 1);
+$liesa-design-neutral-variants-40: hsla(210, 5%, 37%, 1);
+$liesa-design-neutral-variants-50: hsla(213, 4%, 47%, 1);
+$liesa-design-neutral-variants-60: hsla(213, 4%, 57%, 1);
+$liesa-design-neutral-variants-70: hsla(210, 6%, 67%, 1);
+$liesa-design-neutral-variants-80: hsla(213, 8%, 78%, 1);
+$liesa-design-neutral-variants-90: hsla(213, 16%, 89%, 1);
+$liesa-design-neutral-variants-95: hsla(216, 38%, 95%, 1);
+$liesa-design-neutral-variants-99: hsla(240, 100%, 99%, 1);
+$liesa-design-error-10: hsla(358, 100%, 13%, 1);
+$liesa-design-error-20: hsla(357, 100%, 21%, 1);
+$liesa-design-error-30: hsla(356, 100%, 29%, 1);
+$liesa-design-error-40: hsla(0, 75%, 42%, 1);
+$liesa-design-error-50: hsla(2, 73%, 53%, 1);
+$liesa-design-error-60: hsla(4, 100%, 64%, 1);
+$liesa-design-error-70: hsla(6, 100%, 75%, 1);
+$liesa-design-error-80: hsla(6, 100%, 84%, 1);
+$liesa-design-error-90: hsla(6, 100%, 92%, 1);
+$liesa-design-error-95: hsla(9, 100%, 96%, 1);
+$liesa-design-error-99: hsla(300, 100%, 99%, 1);
+$liesa-design-outlet-10: hsla(21, 81%, 12%, 1);
+$liesa-design-outlet-20: hsla(21, 81%, 25%, 1);
+$liesa-design-outlet-30: hsla(21, 81%, 37%, 1);
+$liesa-design-outlet-40: hsla(21, 81%, 49%, 1);
+$liesa-design-outlet-50: hsla(20, 79%, 58%, 1);
+$liesa-design-outlet-60: hsla(21, 79%, 66%, 1);
+$liesa-design-outlet-70: hsla(21, 80%, 75%, 1);
+$liesa-design-outlet-80: hsla(20, 79%, 83%, 1);
+$liesa-design-outlet-90: hsla(21, 77%, 91%, 1);
+$liesa-design-outlet-95: hsla(21, 81%, 96%, 1);
+$liesa-design-outlet-99: hsla(21, 100%, 98%, 1);
+$liesa-design-on-demand-10: hsla(259, 46%, 13%, 1);
+$liesa-design-on-demand-20: hsla(258, 46%, 27%, 1);
+$liesa-design-on-demand-30: hsla(259, 46%, 40%, 1);
+$liesa-design-on-demand-40: hsla(259, 52%, 53%, 1);
+$liesa-design-on-demand-50: hsla(259, 52%, 61%, 1);
+$liesa-design-on-demand-60: hsla(259, 51%, 69%, 1);
+$liesa-design-on-demand-70: hsla(259, 52%, 76%, 1);
+$liesa-design-on-demand-80: hsla(259, 53%, 84%, 1);
+$liesa-design-on-demand-90: hsla(258, 50%, 92%, 1);
+$liesa-design-on-demand-95: hsla(258, 50%, 96%, 1);
+$liesa-design-on-demand-99: hsla(258, 100%, 98%, 1);
+
+$liesa-design-primary-fixed: hsla(208, 100%, 89%, 1);
+
+$liesa-design-secondary-fixed-dim: hsla(149, 59%, 67%, 1);
+
+$liesa-design-tertiary-fixed: hsla(186, 97%, 77%, 1);
+
+$liesa-design-light-surface-dim: hsla(220, 8%, 86%, 1);
+$liesa-design-light-surface-color: hsla(210, 11%, 11%, 1);
+
+$liesa-design-light-surface: hsla(228, 56%, 98%, 1);
+
+$liesa-design-light-surface-container-low: hsla(216, 24%, 96%, 1);
+
+$liesa-design-light-surface-container: hsla(220, 19%, 94%, 1);
+
+$liesa-design-light-surface-container-high: hsla(220, 14%, 91%, 1);
+
+$liesa-design-light-surface-container-highest: hsla(228, 9%, 89%, 1);
+
+$liesa-design-light-on-surface-var: hsla(206, 10%, 28%, 1);
+
+$liesa-design-light-outline: hsla(208, 6%, 47%, 1);
+
+$liesa-design-light-outline-variant: hsla(212, 14%, 78%, 1);
+$liesa-design-light-outline-variant-color: hsla(210, 6%, 19%, 1);
+
+$liesa-design-light-inverse-surface-color: hsla(216, 19%, 95%, 1);
+
+$liesa-design-light-inverse-primary: hsla(205, 95%, 77%, 1);
+
+$liesa-design-dark-primary-color: hsla(259, 58%, 28%, 1);
+
+$liesa-design-dark-on-primary-color: hsla(258, 97%, 87%, 1);
+
+$liesa-design-dark-primary-container: hsla(199, 100%, 23%, 1);
+$liesa-design-dark-primary-container-color: hsla(263, 100%, 93%, 1);
+
+$liesa-design-dark-on-primary-container: hsla(209, 100%, 92%, 1);
+$liesa-design-dark-on-primary-container-color: hsla(257, 43%, 38%, 1);
+
+$liesa-design-dark-secondary-color: hsla(258, 18%, 22%, 1);
+$liesa-design-dark-secondary: hsla(150, 90%, 70%, 1);
+
+$liesa-design-dark-on-secondary: hsla(156, 100%, 11%, 1);
+$liesa-design-dark-on-secondary-color: hsla(263, 27%, 81%, 1);
+
+$liesa-design-dark-secondary-container: hsla(154, 59%, 52%, 1);
+$liesa-design-dark-secondary-container-color: hsla(263, 65%, 92%, 1);
+
+$liesa-design-dark-on-secondary-container: hsla(155, 100%, 9%, 1);
+$liesa-design-dark-on-secondary-container-color: hsla(258, 13%, 31%, 1);
+
+$liesa-design-dark-tertiary: hsla(186, 100%, 78%, 1);
+$liesa-design-dark-tertiary-color: hsla(338, 33%, 22%, 1);
+
+$liesa-design-dark-on-tertiary-color: hsla(343, 63%, 83%, 1);
+
+$liesa-design-dark-tertiary-container: hsla(185, 57%, 61%, 1);
+$liesa-design-dark-tertiary-container-color: hsla(342, 100%, 92%, 1);
+
+$liesa-design-dark-on-tertiary-container: hsla(185, 100%, 11%, 1);
+$liesa-design-dark-on-tertiary-container-color: hsla(340, 25%, 31%, 1);
+
+$liesa-design-dark-primary-fixed-color: hsla(261, 100%, 18%, 1);
+
+$liesa-design-dark-on-primary-fixed-variant: hsla(258, 100%, 87%, 1);
+
+$liesa-design-dark-secondary-fixed: hsla(150, 96%, 72%, 1);
+$liesa-design-dark-secondary-fixed-color: hsla(253, 26%, 13%, 1);
+
+$liesa-design-dark-on-secondary-fixed: hsla(153, 100%, 6%, 1);
+
+$liesa-design-dark-on-secondary-fixed-variant: hsla(157, 100%, 16%, 1);
+
+$liesa-design-dark-secondary-fixed-dim: hsla(152, 68%, 60%, 1);
+
+$liesa-design-dark-tertiary-fixed-color: hsla(338, 48%, 13%, 1);
+
+$liesa-design-dark-surface-dim: hsla(204, 13%, 8%, 1);
+
+$liesa-design-dark-surface-color: hsla(280, 17%, 90%, 1);
+
+$liesa-design-dark-surface-bright: hsla(214, 6%, 23%, 1);
+
+$liesa-design-dark-surface-container-lowest: hsla(200, 21%, 5%, 1);
+
+$liesa-design-dark-surface-container: hsla(210, 9%, 13%, 1);
+
+$liesa-design-dark-surface-container-high: hsla(210, 7%, 16%, 1);
+
+$liesa-design-dark-surface-container-highest: hsla(210, 6%, 21%, 1);
+
+$liesa-design-dark-on-surface-color: hsla(260, 14%, 8%, 1);
+
+$liesa-design-dark-outline: hsla(208, 7%, 57%, 1);
+
+$liesa-design-dark-error-color: hsla(3, 71%, 22%, 1);
+
+$liesa-design-dark-on-error-color: hsla(3, 70%, 83%, 1);
+
+$liesa-design-dark-error-container-color: hsla(4, 71%, 92%, 1);
+
+$liesa-design-dark-inverse-surface-color: hsla(270, 6%, 20%, 1);
+
+$liesa-design-m3-sys-light-tertiary-container: hsla(186, 68%, 67%, 1);
+$liesa-design-m3-sys-light-on-tertiary-container: hsla(184, 100%, 13%, 1);
+
+// OPACITY
+$liesa-design-opacity-08: hsla(0, 0%, 100%, 0.08);
+$liesa-design-opacity-12: hsla(0, 0%, 100%, 0.12);
+$liesa-design-opacity-16: hsla(0, 0%, 100%, 0.16);
+
+$liesa-design-m3-state-layers-light-primary-opacity-08: hsla(199, 100%, 20%, 0.08);
+$liesa-design-m3-state-layers-light-primary-opacity-12: hsla(199, 100%, 20%, 0.12);
+$liesa-design-m3-state-layers-light-primary-opacity-16: hsla(199, 100%, 20%, 0.16);
+
+$liesa-design-m3-state-layers-light-on-secondary-container-opacity-08: hsla(149, 97%, 25%, 0.08);
+$liesa-design-m3-state-layers-light-on-secondary-container-opacity-12: hsla(149, 97%, 25%, 0.12);
+$liesa-design-m3-state-layers-light-on-secondary-container-opacity-hh16: hsla(149, 97%, 25%, 0.16);
+
+$liesa-design-m3-state-layers-light-on-surface-opacity-08: hsla(264, 8%, 12%, 0.08);
+$liesa-design-m3-state-layers-light-on-surface-opacity-12: hsla(264, 8%, 12%, 0.12);
+$liesa-design-m3-state-layers-light-on-surface-opacity-16: hsla(264, 8%, 12%, 0.16);
+
+$liesa-design-m3-state-layers-light-on-primary-container-opacity-08: hsla(201, 74%, 32%, 0.08);
+$liesa-design-m3-state-layers-light-on-primary-container-opacity-12: hsla(201, 74%, 32%, 0.12);
+$liesa-design-m3-state-layers-light-on-primary-container-opacity-16: hsla(201, 74%, 32%, 0.16);
+
+$liesa-design-m3-state-layers-light-on-tertiary-container-opacity-08: hsla(90, 58%, 10%, 0.08);
+$liesa-design-m3-state-layers-light-on-tertiary-container-opacity-12: hsla(90, 58%, 10%, 0.12);
+$liesa-design-m3-state-layers-light-on-tertiary-container-opacity-16: hsla(90, 58%, 10%, 0.16);
+
+//warning - used in light/dark themes
+$liesa-design-warning-10: hsla(38, 91%, 13%, 1);
+$liesa-design-warning-20: hsla(37, 91%, 25%, 1);
+$liesa-design-warning-30: hsla(38, 92%, 38%, 1);
+$liesa-design-warning-40: hsla(38, 92%, 50%, 1);
+$liesa-design-warning-50: hsla(38, 92%, 59%, 1);
+$liesa-design-warning-60: hsla(38, 92%, 67%, 1);
+$liesa-design-warning-70: hsla(38, 92%, 75%, 1);
+$liesa-design-warning-80: hsla(38, 93%, 84%, 1);
+$liesa-design-warning-90: hsla(38, 91%, 92%, 1);
+$liesa-design-warning-95: hsla(37, 93%, 95%, 1);
+$liesa-design-warning-99: hsla(42, 87%, 97%, 1);
+
+
+
