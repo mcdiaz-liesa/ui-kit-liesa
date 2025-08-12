@@ -4,10 +4,10 @@ on:
   push:
     branches: [main]
 permissions:
-      contents: read
+      contents: write
       issues: write
       packages: write
-
+      metadata: write
 jobs:
   publish:
     runs-on: ubuntu-latest
