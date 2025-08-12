@@ -9,7 +9,6 @@ node_modules
 .npmrc
 
 # Parcel
-dist
 .cache
 
 # Logs
@@ -23,3 +22,7 @@ yarn-error.log*
 .DS_Store
 
 .github/workflows/publish.yml
+
+
+src
+scss
