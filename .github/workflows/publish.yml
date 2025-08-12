@@ -20,7 +20,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
 
       - run: npm install
-      - run: npm adduser --registry=https://npm.pkg.github.com
+      - run: npm adduser --registry=https://npm.pkg.github.com --scope=@mcdiaz-liesa
       - run: npm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
