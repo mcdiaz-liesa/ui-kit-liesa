@@ -1,6 +1,6 @@
 {
   "name": "@mcdiaz-liesa/ui-kit-liesa",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "private": false,
   "source": "src/app.js",
   "main": "dist/index.js",
