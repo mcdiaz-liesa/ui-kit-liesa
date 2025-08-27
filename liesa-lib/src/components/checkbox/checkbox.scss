@@ -1,6 +1,23 @@
 @use '../../../scss/index' as *;
+@use 'bootstrap' as *;
 
 .liesa-form-checkbox {
     background-color: $liesa-design-primary-50;
     @extend ._liesa-design-label-medium;
+    @extend .form-check;
+    .liesa-form-input {
+        @extend .form-check-input;
+    }
+    .liesa-form-label {
+        @extend .form-check-label;
+        @extend .display-1;
+    }
+}
+
+.liesa-button {
+    @extend .btn;
+    @extend .btn-primary;
+    .label-button {
+        @extend .display-1;
+    }
 }

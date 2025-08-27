@@ -1,0 +1,10 @@
+@use '../../../scss/index' as *;
+@use 'bootstrap' as *;
+
+.liesa-button {
+    @extend .btn;
+    @extend .btn-primary;
+    .label-button {
+        @extend .display-1;
+    }
+}
