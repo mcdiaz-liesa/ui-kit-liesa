@@ -1,19 +1,37 @@
 import checkboxHTML from './checkbox.html?raw'
+import checkboxSCSS from './checkbox.scss?inline'
 import './checkbox.scss'
 
-// Checkbox component: a customizable checkbox or radio button (its depends on the "type" prop (radio or checkbox))
-export function Checkbox(props = {}) {
-  console.log("Checkbox component loaded")
 
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = checkboxHTML.trim()
+class LiesaCheckbox extends HTMLElement {
+  constructor() {
+    super()
+    this.attachShadow({ mode: 'open'})
+    this.shadowRoot.innerHTML = `
+      <style>${checkboxSCSS}</style>
+      ${checkboxHTML.trim()}`
+  }
 
-  const checkbox = wrapper.firstChild
+  connectedCallback() {
+    const cb = this.shadowRoot.querySelector('.liesa-form-checkbox')
+    const cbInput = this.shadowRoot.querySelector('input.liesa-form-input')
+    const cbLabel = this.shadowRoot.querySelector('label.liesa-form-label')
 
-  if (props.id) checkbox.querySelector('input').id = props.id
-  if (props.label) checkbox.querySelector('label').innerText = props.label
-  if (props.checked) checkbox.querySelector('input').checked = props.checked
-  if (props.type) checkbox.querySelector('input').type = props.type
-
-  return checkbox
+    if (this.hasAttribute('id')) {
+      cb.setAttribute('id', this.getAttribute('id'))
+    }
+    if (this.hasAttribute('label')) {
+      cbLabel.innerHTML = this.getAttribute('label')
+    }
+    if (this.hasAttribute('checked')) {
+      cbInput.setAttribute('checked', this.getAttribute('checked'))
+    }
+    if (this.hasAttribute('type')) {
+      cbInput.setAttribute('type', this.getAttribute('type'))
+    }
+  }
 }
+
+customElements.define('liesa-checkbox', LiesaCheckbox)
+
+export { LiesaCheckbox }

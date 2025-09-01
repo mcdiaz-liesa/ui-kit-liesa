@@ -1,18 +1,27 @@
-// 
-
 import buttonHTML from './button.html?raw'
-import './button.scss'
+import buttonSCSS from './button.scss?inline'
 
-export function Button(props = {}) {
-  console.log("Button component loaded")
+class LiesaButton extends HTMLElement {
+  constructor() {
+    super()
+    this.attachShadow({ mode: 'open'})
+    this.shadowRoot.innerHTML = `
+      <style>${buttonSCSS}</style>
+      ${buttonHTML.trim()}`
+  }
 
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = buttonHTML.trim()
+  connectedCallback() {
+    const btn = this.shadowRoot.querySelector('button')
 
-  const button = wrapper.firstChild
-
-  if (props.id) button.setAttribute('id', props.id);
-  if (props.label) button.innerText = props.label;
-
-  return button
+    if (this.hasAttribute('id')) {
+      btn.setAttribute('id', this.getAttribute('id'))
+    }
+    if (this.hasAttribute('label')) {
+      btn.innerHTML = this.getAttribute('label')
+    }
+  }
 }
+
+customElements.define('liesa-button', LiesaButton)
+
+export { LiesaButton }

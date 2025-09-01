@@ -1,18 +1,18 @@
 {
-  "name": "@mcdiaz-liesa/ui-kit-liesa",
-  "version": "1.0.29",
+  "name": "@cdiaz-liesa/ui-kit-liesa",
+  "version": "1.0.44",
   "private": false,
   "source": "src/app.js",
-  "main": "dist/liesa-lib.umd.cjs",
-  "module": "dist/liesa-lib.js",
+  "main": "dist/liesa-lib.umd.js",
+  "module": "dist/liesa-lib.es.js",
   "exports": {
     ".": {
-      "import": "./dist/liesa-lib.js",
-      "require": "./dist/liesa-lib.umd.cjs"
+      "import": "./dist/liesa-lib.es.js",
+      "require": "./dist/liesa-lib.umd.js"
     },
     "./style": "./dist/ui-kit-liesa.css"
   },
-  "style": "dist/index.css",
+  "style": "dist/ui-kit-liesa.css",
   "scripts": {
     "build": "vite build",
     "dev": "vite"
@@ -26,9 +26,6 @@
     "vite": "^7.0.6"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.7"
+    "registry": "http://localhost:4873"
   }
 }

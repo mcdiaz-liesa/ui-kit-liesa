@@ -14,11 +14,10 @@ export default defineConfig({
     rollupOptions: {
       external: ['bootstrap'],
       output: {
-        globals: {
-          bootstrap: 'bootstrap',
-        },
+        assetFileNames: 'ui-kit-liesa.[ext]',
       },
     },
+    cssCodeSplit: false,
     minify: true,
   },
 })
