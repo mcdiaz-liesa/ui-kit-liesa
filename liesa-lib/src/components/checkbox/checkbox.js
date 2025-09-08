@@ -1,6 +1,5 @@
 import checkboxHTML from './checkbox.html?raw'
 import checkboxSCSS from './checkbox.scss?inline'
-import './checkbox.scss'
 
 
 class LiesaCheckbox extends HTMLElement {

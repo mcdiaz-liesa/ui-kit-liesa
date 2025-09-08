@@ -1,6 +1,6 @@
 {
   "name": "@cdiaz-liesa/ui-kit-liesa",
-  "version": "1.0.44",
+  "version": "1.0.48",
   "private": false,
   "source": "src/app.js",
   "main": "dist/liesa-lib.umd.js",

@@ -26,3 +26,7 @@ yarn-error.log*
 
 src
 scss
+index.html
+vite.config.js
+.npmrc
+assets

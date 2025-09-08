@@ -1,0 +1,734 @@
+@use "../../variables/color" as liesa-colors;
+@use "../typography" as liesa-typography;
+@use "../palette" as liesa-palette;
+
+
+@mixin _liesa-design-button(
+    $background-repeat,
+    $background-size,
+    $background-position,
+    $display,
+    $width,
+    $height,
+    $padding,
+    $border-radius,
+    $align-items) {
+        background-repeat: $background-repeat;
+        display: $display;
+        background-size: $background-size;
+        background-position: $background-position;
+        width: $width;
+        height: $height;
+        padding: $padding;
+        border-radius: $border-radius;
+        align-items: $align-items;
+}
+
+@mixin _liesa-design-button-icon-center-icon-button() {
+    @include _liesa-design-button(
+        $background-repeat: no-repeat,
+        $background-size: 20px,
+        $background-position: center,
+        $display: flex,
+        $width: 40px,
+        $height: 40px,
+        $padding: 8px,
+        $border-radius: 100px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-button-icon-center-small-fabs() {
+    @include _liesa-design-button(
+        $background-repeat: no-repeat,
+        $background-size: 18px,
+        $background-position: center,
+        $display: flex,
+        $width: 40px,
+        $height: 40px,
+        $padding: 0,
+        $border-radius: 12px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-button-icon-center-fabs() {
+    @include _liesa-design-button(
+        $background-repeat: no-repeat,
+        $background-size: 18px,
+        $background-position: center,
+        $display: flex,
+        $width: 56px,
+        $height: 56px,
+        $padding: 0,
+        $border-radius: 16px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-button-icon-center-large-fabs() {
+    @include _liesa-design-button(
+        $background-repeat: no-repeat,
+        $background-size: 27px,
+        $background-position: center,
+        $display: flex,
+        $width: 96px,
+        $height: 96px,
+        $padding: 0,
+        $border-radius: 28px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-button-icon-center-extended-fabs() {
+    @include _liesa-design-button(
+        $background-repeat: no-repeat,
+        $background-size: 18px,
+        $background-position: 12px center,
+        $display: flex,
+        $width: 120px,
+        $height: 56px,
+        $padding: 0 40px,
+        $border-radius: 16px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-button-icon-left() {
+    @include _liesa-design-button(
+        $background-repeat: no-repeat,
+        $background-size: 12px,
+        $background-position: 20px center,
+        $display: flex,
+        $width: 104px,
+        $height: 40px,
+        $padding: 0px 60px 0px 40px,
+        $border-radius: 8px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-button-icon-right() {
+    @include _liesa-design-button(
+        $background-repeat: no-repeat,
+        $background-size: 12px,
+        $background-position: 59px center,
+        $display: flex,
+        $width: 104px,
+        $height: 40px,
+        $padding: 0 30px 0 20px,
+        $border-radius: 8px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-button-without-icon() {
+    @include _liesa-design-button(
+        $background-repeat: default,
+        $background-size: default,
+        $background-position: 0,
+        $display: default,
+        $width: 86px,
+        $height: 40px,
+        $padding: 0px,
+        $border-radius: 8px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-button-icon-left-mobile() {
+    @include _liesa-design-button(
+        $background-repeat: no-repeat,
+        $background-size: 12px,
+        $background-position: 20px center,
+        $display: flex,
+        $width: 104px,
+        $height: 30px,
+        $padding: 0px 60px 0px 40px,
+        $border-radius: 8px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-button-icon-right-mobile() {
+    @include _liesa-design-button(
+        $background-repeat: no-repeat,
+        $background-size: 12px,
+        $background-position: 59px center,
+        $display: flex,
+        $width: 104px,
+        $height: 30px,
+        $padding: 0px 30px 0px 20px,
+        $border-radius: 8px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-button-without-icon-mobile() {
+    @include _liesa-design-button(
+        $background-repeat: default,
+        $background-size: default,
+        $background-position: 0,
+        $display: default,
+        $width: 86px,
+        $height: 30px,
+        $padding: 0,
+        $border-radius: 8px,
+        $align-items: center,
+    );
+}
+
+@mixin _liesa-design-white-button-background-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-white-plus-icon.svg');
+}
+
+@mixin _liesa-design-light-primary-button-background-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-light-primary-plus-icon.svg');
+}
+
+@mixin _liesa-design-on-surface-variant-button-background-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-on-surface-variant-plus-icon.svg');
+}
+
+@mixin _liesa-design-on-secondary-button-background-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-on-secondary-plus-icon.svg');
+}
+
+@mixin _liesa-design-small-fabs-surface-background-pencil-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-primary-pencil-icon.svg');
+}
+
+@mixin _liesa-design-small-fabs-on-primary-container-background-pencil-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-primary-container-pencil-icon.svg');
+}
+
+@mixin _liesa-design-small-fabs-on-secondary-container-background-pencil-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-secondary-container-pencil-icon.svg');
+}
+
+@mixin _liesa-design-small-fabs-on-tertiary-container-background-pencil-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-tertiary-container-pencil-icon.svg');
+}
+
+@mixin _liesa-design-icon-buttons-on-primary-background-nut-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-primary-nut-icon.svg');
+}
+
+@mixin _liesa-design-icon-buttons-on-surface-variant-background-nut-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-surface-variant-nut-icon.svg');
+}
+
+@mixin _liesa-design-icon-buttons-on-secondary-container-background-nut-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-secondary-container-nut-icon.svg');
+}
+
+@mixin _liesa-design-icon-buttons-on-primary-fill-background-nut-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-primary-fill-nut-icon.svg');
+}
+
+@mixin _liesa-design-icon-buttons-on-secondary-container-fill-background-nut-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-secondary-container-fill-nut-icon.svg');
+}
+
+@mixin _liesa-design-icon-buttons-primary-fill-background-nut-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-primary-fill-nut-icon.svg');
+}
+
+@mixin _liesa-design-icon-buttons-on-primary-fill-background-nut-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-primary-fill-nut-icon.svg');
+}
+
+@mixin _liesa-design-icon-buttons-on-surface-background-nut-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-surface-nut-icon.svg');
+}
+
+@mixin _liesa-design-icon-buttons-on-surface-fill-background-nut-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-m3-sys-light-on-surface-fill-nut-icon.svg');
+}
+
+@mixin _liesa-design-text-buttons-outline-background-selected-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-schemes-outline-selected-icon.svg');
+}
+
+@mixin _liesa-design-text-buttons-primary-background-selected-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-schemes-primary-selected-icon.svg');
+}
+
+@mixin _liesa-design-text-buttons-on-surface-background-selected-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-schemes-on-surface-selected-icon.svg');
+}
+
+@mixin _liesa-design-text-buttons-outline-background-compare-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-schemes-outline-compare-icon.svg');
+}
+
+@mixin _liesa-design-text-buttons-primary-background-compare-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-schemes-primary-compare-icon.svg');
+}
+
+@mixin _liesa-design-text-buttons-on-surface-background-compare-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-schemes-on-surface-compare-icon.svg');
+}
+
+@mixin _liesa-design-text-buttons-on-primary-background-compare-image() {
+    background-image: url('${baseDir}images/assets/icons/liesa-schemes-on-primary-compare-icon.svg');
+}
+
+@mixin _liesa-design-button-without-background-image() {
+    background-image: '';
+}
+
+@mixin _liesa-design-light-opacity-button() {
+    opacity: 0.8;
+}
+
+@mixin _liesa-design-dark-opacity-button() {
+    opacity: 0.12;
+}
+
+@mixin _liesa-design-hovered-button() {
+    @include _liesa-design-light-opacity-button();
+    //aquí se agregaría M3/elevation/1
+}
+
+//Elevations
+@mixin _liesa-design-elevation-light-1() {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.30), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+@mixin _liesa-design-elevation-light-2() {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.30), 0 1px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+._liesa-design-filled-button {
+    @include _liesa-design-button-without-icon();
+    @include _liesa-design-button-without-background-image();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-light-primary;
+}
+
+._liesa-design-filled-button-icon {
+    @include _liesa-design-white-button-background-image();
+    @include _liesa-design-button-icon-left();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-light-primary;
+}
+
+._liesa-design-filled-button-mobile {
+    @include _liesa-design-button-without-background-image();
+    @include _liesa-design-button-without-icon-mobile();
+    @extend ._liesa-design-label-medium;
+    @extend ._liesa-design-light-primary;
+}
+
+._liesa-design-outlined-button {
+    @include _liesa-design-button-without-icon();
+    @include _liesa-design-button-without-background-image();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-outlined-button;
+}
+
+._liesa-design-outlined-button-icon {
+    @include _liesa-design-light-primary-button-background-image();
+    @include _liesa-design-button-icon-left();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-outlined-button;
+}
+
+._liesa-design-outlined-button-mobile {
+    @include _liesa-design-button-without-background-image();
+    @include _liesa-design-button-without-icon-mobile();
+    @extend ._liesa-design-label-medium;
+    @extend ._liesa-design-schema-outlined-button;
+}
+
+._liesa-design-buttons-guidance-text-button {
+    @include _liesa-design-button-without-icon();
+    @include _liesa-design-button-without-background-image();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-text-button-light;
+}
+
+._liesa-design-buttons-guidance-text-button-icon {
+    @include _liesa-design-on-surface-variant-button-background-image();
+    @include _liesa-design-button-icon-left();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-text-button-dark;
+}
+
+._liesa-design-buttons-guidance-text-button-mobile {
+    @include _liesa-design-on-surface-variant-button-background-image();
+    @include _liesa-design-button-icon-right-mobile();
+    @extend ._liesa-design-label-medium;
+    @extend ._liesa-design-schema-text-button-dark;
+}
+
+._liesa-design-buttons-guidance-text-button-icon-opacity {
+    @include _liesa-design-light-primary-button-background-image();
+    @include _liesa-design-button-icon-left();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-text-button-light;
+}
+
+._liesa-design-buttons-guidance-text-button-mobile-opacity {
+    @include _liesa-design-light-primary-button-background-image();
+    @include _liesa-design-button-icon-right-mobile();
+    @extend ._liesa-design-label-medium;
+    @extend ._liesa-design-schema-text-button-light;
+}
+
+._liesa-design-elevated-button {
+    @include _liesa-design-button-without-icon();
+    @include _liesa-design-button-without-background-image();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-elevated-button;
+}
+
+._liesa-design-elevated-button-icon {
+    @include _liesa-design-light-primary-button-background-image();
+    @include _liesa-design-button-icon-left();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-elevated-button;
+}
+
+._liesa-design-tonal-button {
+    @include _liesa-design-button-without-icon();
+    @include _liesa-design-button-without-background-image();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-tonal-button;
+}
+
+._liesa-design-tonal-button-icon {
+    @include _liesa-design-on-surface-variant-button-background-image();
+    @include _liesa-design-button-icon-left();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-tonal-button;
+}
+
+ ._liesa-design-outlined-opacity-button {
+    @extend ._liesa-design-schema-disable-light-outline-button;
+}
+
+//disabled
+._liesa-design-disable-dark-button {
+    @extend ._liesa-design-schema-disable-dark-button;
+    //background-color: overlay(liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-12, liesa-colors.$liesa-design-white);
+}
+
+._liesa-design-disable-light-button {
+    @extend ._liesa-design-schema-disable-light-button;
+}
+
+._liesa-design-disable-light-outline-button {
+    @extend ._liesa-design-schema-disable-light-outline-button;
+}
+
+._liesa-design-disable-dark-button-icon {
+    @include _liesa-design-on-surface-variant-button-background-image();
+    @extend ._liesa-design-schema-disable-dark-button;
+}
+
+._liesa-design-disable-light-button-icon {
+    @include _liesa-design-on-surface-variant-button-background-image();
+    @extend ._liesa-design-schema-disable-light-button;
+}
+
+._liesa-design-disable-light-outline-button-icon {
+    @include _liesa-design-on-surface-variant-button-background-image();
+    @extend ._liesa-design-schema-disable-light-outline-button;
+}
+
+//opacity
+._liesa-design-filled-button-opacity-08 {
+    @extend ._liesa-design-primary-40-layer-opacity-08;
+}
+
+._liesa-design-filled-button-opacity-12 {
+    @extend ._liesa-design-primary-40-layer-opacity-12;
+}
+
+._liesa-design-outlined-button-opacity-08 {
+    @extend ._liesa-design-light-primary-layer-white-opacity-08;
+}
+
+._liesa-design-outlined-button-opacity-12 {
+    @extend ._liesa-design-light-primary-layer-white-opacity-08;
+}
+
+._liesa-design-outlined-button-opacity-08-icon {
+    @extend ._liesa-design-light-primary-layer-white-opacity-08;
+    @include _liesa-design-light-primary-button-background-image();
+}
+
+._liesa-design-outlined-button-opacity-12-icon {
+    @extend ._liesa-design-light-primary-layer-white-opacity-12;
+    @include _liesa-design-light-primary-button-background-image();
+}
+
+._liesa-design-elevated-button-opacity-08 {
+    @extend ._liesa-design-light-primary-layer-surface-container-opacity-08;
+}
+
+._liesa-design-elevated-button-opacity-12 {
+    @extend ._liesa-design-light-primary-layer-surface-container-opacity-12;
+}
+
+._liesa-design-tonal-button-opacity-08 {
+    @extend ._liesa-design-light-on-secondary-container-layer-opacity-08;
+}
+
+._liesa-design-tonal-button-opacity-12 {
+    @extend ._liesa-design-light-on-secondary-container-layer-opacity-12;
+}
+
+//fabs
+._liesa-design-small-fabs-surface {
+    @include _liesa-design-small-fabs-surface-background-pencil-image();
+    @extend ._liesa-design-fabs-primary-40-surface;
+    @include _liesa-design-button-icon-center-small-fabs();
+}
+
+._liesa-design-small-fabs-primary {
+    @include _liesa-design-small-fabs-on-primary-container-background-pencil-image();
+    @extend ._liesa-design-fabs-primary-container-on-primary-container;
+    @include _liesa-design-button-icon-center-small-fabs();
+}
+
+._liesa-design-small-fabs-secondary {
+    @extend ._liesa-design-schema-tonal-button;
+    @include _liesa-design-button-icon-center-small-fabs();
+    @include _liesa-design-small-fabs-on-secondary-container-background-pencil-image();
+}
+
+._liesa-design-small-fabs-tertiary {
+    @include _liesa-design-small-fabs-on-tertiary-container-background-pencil-image();
+    @include _liesa-design-button-icon-center-small-fabs();
+    @extend ._liesa-design-fabs-tertiary-container-on-tertiary-container;
+}
+
+._liesa-design-fabs-surface {
+    @include _liesa-design-small-fabs-surface-background-pencil-image();
+    @extend ._liesa-design-fabs-primary-40-surface;
+    @include _liesa-design-button-icon-center-fabs();
+}
+
+._liesa-design-fabs-primary {
+    @include _liesa-design-small-fabs-on-primary-container-background-pencil-image();
+    @extend ._liesa-design-fabs-primary-container-on-primary-container;
+    @include _liesa-design-button-icon-center-fabs();
+}
+
+._liesa-design-fabs-secondary {
+    @extend ._liesa-design-schema-tonal-button;
+    @include _liesa-design-button-icon-center-fabs();
+    @include _liesa-design-small-fabs-on-secondary-container-background-pencil-image();
+}
+
+._liesa-design-fabs-tertiary {
+    @include _liesa-design-small-fabs-on-tertiary-container-background-pencil-image();
+    @include _liesa-design-button-icon-center-fabs();
+    @extend ._liesa-design-fabs-tertiary-container-on-tertiary-container;
+}
+
+._liesa-design-large-fabs-surface {
+    @include _liesa-design-small-fabs-surface-background-pencil-image();
+    @extend ._liesa-design-fabs-primary-40-surface;
+    @include _liesa-design-button-icon-center-large-fabs();
+}
+
+._liesa-design-large-fabs-primary {
+    @include _liesa-design-small-fabs-on-primary-container-background-pencil-image();
+    @extend ._liesa-design-fabs-primary-container-on-primary-container;
+    @include _liesa-design-button-icon-center-large-fabs();
+}
+
+._liesa-design-large-fabs-secondary {
+    @extend ._liesa-design-schema-tonal-button;
+    @include _liesa-design-button-icon-center-large-fabs();
+    @include _liesa-design-small-fabs-on-secondary-container-background-pencil-image();
+}
+
+._liesa-design-large-fabs-tertiary {
+    @include _liesa-design-small-fabs-on-tertiary-container-background-pencil-image();
+    @include _liesa-design-button-icon-center-large-fabs();
+    @extend ._liesa-design-fabs-tertiary-container-on-tertiary-container;
+}
+
+._liesa-design-extended-fabs-surface {
+    @include _liesa-design-small-fabs-surface-background-pencil-image();
+    @extend ._liesa-design-fabs-primary-40-surface;
+    @include _liesa-design-button-icon-center-extended-fabs();
+}
+
+._liesa-design-extended-fabs-primary {
+    @include _liesa-design-small-fabs-on-primary-container-background-pencil-image();
+    @extend ._liesa-design-fabs-primary-container-on-primary-container;
+    @include _liesa-design-button-icon-center-extended-fabs();
+}
+
+._liesa-design-extended-fabs-secondary {
+    @extend ._liesa-design-schema-tonal-button;
+    @include _liesa-design-button-icon-center-extended-fabs();
+    @include _liesa-design-small-fabs-on-secondary-container-background-pencil-image();
+}
+
+._liesa-design-extended-fabs-tertiary {
+    @include _liesa-design-small-fabs-on-tertiary-container-background-pencil-image();
+    @include _liesa-design-button-icon-center-extended-fabs();
+    @extend ._liesa-design-fabs-tertiary-container-on-tertiary-container;
+}
+
+//icon-button
+._liesa-design-icon-button-filled {
+    @include _liesa-design-icon-buttons-on-primary-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-light-primary;
+}
+
+._liesa-design-icon-button-standard {
+    @include _liesa-design-icon-buttons-on-surface-variant-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-text-button-dark;
+    border-color: unset;
+}
+
+._liesa-design-icon-button-tonal {
+    @include _liesa-design-icon-buttons-on-secondary-container-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-tonal-button;
+}
+
+._liesa-design-icon-button-outlined {
+    @include _liesa-design-icon-buttons-on-surface-variant-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    background-color: unset;
+    border-color: liesa-colors.$liesa-design-light-outline;
+}
+
+// ._liesa-design-icon-button-toggeable-filled-light {
+//     background-color: liesa-colors.$liesa-design-light-surface-container-highest;
+//     ._liesa-design-button-icon-center-icon-button();
+//     ._liesa-design-label-large();
+//     ._liesa-design-icon-buttons-primary-background-nut-image();
+// }//da error la imagen para descargarla
+
+._liesa-design-icon-button-toggeable-filled-dark {
+    @include _liesa-design-icon-buttons-on-primary-fill-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-light-primary;
+}
+
+._liesa-design-icon-button-toggeable-standard-dark {
+    @include _liesa-design-icon-buttons-primary-fill-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    background-color: unset;
+    border-color: unset;
+}
+
+._liesa-design-icon-button-toggeable-tonal-dark {
+    @include _liesa-design-icon-buttons-on-secondary-container-fill-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    @extend ._liesa-design-schema-tonal-button;
+}
+
+._liesa-design-icon-button-toggeable-outlined-dark {
+    @include _liesa-design-icon-buttons-on-primary-fill-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    background-color: liesa-colors.$liesa-design-light-outline-variant-color;
+}
+
+//disabled icon button
+._liesa-design-icon-button-disabled-thin-dark {
+    @include _liesa-design-icon-buttons-on-surface-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    background-color: overlay(liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-12, liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-12);
+    border-color: liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-12;
+}
+
+._liesa-design-icon-button-disabled-fill-dark {
+    @include _liesa-design-icon-buttons-on-surface-fill-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    background-color: overlay(liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-12, liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-12);
+    border-color: liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-12;
+}
+
+._liesa-design-icon-button-disabled-thin-light {
+    @include _liesa-design-icon-buttons-on-surface-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    background-color: overlay(liesa-colors.$liesa-design-white, liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-08);
+    border-color: unset;
+}
+
+._liesa-design-icon-button-disabled-thin-light-outlined {
+    @include _liesa-design-icon-buttons-on-surface-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    background-color: overlay(liesa-colors.$liesa-design-white, liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-08);
+    border-color: liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-08;
+}
+
+._liesa-design-icon-button-disabled-fill-light {
+    @include _liesa-design-icon-buttons-on-surface-fill-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    background-color: overlay(liesa-colors.$liesa-design-white, liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-08);
+    border-color: unset;
+}
+
+._liesa-design-icon-button-disabled-fill-light-outlined {
+    @include _liesa-design-icon-buttons-on-surface-fill-background-nut-image();
+    @include _liesa-design-button-icon-center-icon-button();
+    @extend ._liesa-design-label-large;
+    background-color: overlay(liesa-colors.$liesa-design-white, liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-08);
+    border-color: liesa-colors.$liesa-design-m3-state-layers-light-on-surface-opacity-08;
+}
+
+//text button
+._liesa-design-text-button-text-button {
+    @include _liesa-design-text-buttons-outline-background-selected-image();
+    @include _liesa-design-button-icon-left();
+    @extend ._liesa-design-label-medium;
+    color: liesa-colors.$liesa-design-light-outline;
+    background-color: unset;
+    border: unset;
+}
+
+._liesa-design-text-button-text-button-hovered {
+    @include _liesa-design-text-buttons-primary-background-selected-image();
+    @include _liesa-design-button-icon-left();
+    @extend ._liesa-design-label-medium;
+    color: liesa-colors.$liesa-design-primary-40;
+    background-color: unset;
+    border: unset;
+}
+
+._liesa-design-text-button-text-button-hovered {
+    @include _liesa-design-text-buttons-on-surface-background-selected-image();
+    @include _liesa-design-button-icon-left();
+    @extend ._liesa-design-label-medium;
+    color: liesa-colors.$liesa-design-light-surface-color;
+    background-color: unset;
+    border: unset;
+}
+
+._liesa-design-schema-outlined-button {
+    @extend ._liesa-design-light-on-primary;
+    border-color: liesa-colors.$liesa-design-primary-60;
+}
+
+
+
+
+
+

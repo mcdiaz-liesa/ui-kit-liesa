@@ -1,0 +1,314 @@
+._liesa-design-light-primary {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-white,
+        liesa-colors.$liesa-design-primary-40,
+    );
+}
+
+._liesa-design-light-on-primary {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-primary-40,
+        liesa-colors.$liesa-design-white,
+    );
+}
+
+._liesa-design-light-primary-container {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-primary-30,
+        liesa-colors.$liesa-design-primary-90,
+    );
+}
+
+._liesa-design-light-on-primary-container {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-primary-90,
+        liesa-colors.$liesa-design-primary-30,
+    );
+}
+
+._liesa-design-light-secondary {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-white,
+        liesa-colors.$liesa-design-secondary-40,
+    );
+}
+
+._liesa-design-light-on-secondary-container {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-secondary-90,
+        liesa-colors.$liesa-design-secondary-30,
+    );
+}
+
+._liesa-design-light-secondary-container {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-secondary-30,
+        liesa-colors.$liesa-design-secondary-90,
+    );
+}
+
+._liesa-design-light-on-secondary {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-secondary-40,
+        liesa-colors.$liesa-design-white,
+    );
+}
+
+._liesa-design-light-tertiary {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-white,
+        liesa-colors.$liesa-design-tertiary-40,
+    );
+}
+
+._liesa-design-light-on-tertiary-container {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-tertiary-90,
+        liesa-colors.$liesa-design-tertiary-30,
+    );
+}
+
+._liesa-design-light-tertiary-container {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-tertiary-30,
+        liesa-colors.$liesa-design-tertiary-90,
+    );
+}
+
+._liesa-design-light-on-tertiary {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-tertiary-40,
+        liesa-colors.$liesa-design-white,
+    );
+}
+
+._liesa-design-light-primary-fixed {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-primary-10,
+        liesa-colors.$liesa-design-primary-fixed,
+    );
+}
+
+._liesa-design-light-primary-fixed-dim {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-primary-30,
+        liesa-colors.$liesa-design-primary-80,
+    );
+}
+
+._liesa-design-light-on-primary-fixed {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-primary-fixed,
+        liesa-colors.$liesa-design-primary-10,
+    );
+}
+
+._liesa-design-light-on-primary-fixed-variant {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-primary-80,
+        liesa-colors.$liesa-design-primary-30,
+    );
+}
+
+._liesa-design-light-secondary-fixed {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-secondary-10,
+        liesa-colors.$liesa-design-secondary-90,
+    );
+}
+
+._liesa-design-light-secondary-fixed-dim {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-secondary-30,
+        liesa-colors.$liesa-design-secondary-fixed-dim,
+    );
+}
+
+._liesa-design-light-on-secondary-fixed {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-secondary-90,
+        liesa-colors.$liesa-design-secondary-10,
+    );
+}
+
+._liesa-design-light-on-secondary-fixed-variant {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-secondary-fixed-dim,
+        liesa-colors.$liesa-design-secondary-30,
+    );
+}
+
+._liesa-design-light-tertiary-fixed {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-tertiary-10,
+        liesa-colors.$liesa-design-tertiary-fixed,
+    );
+}
+
+._liesa-design-light-tertiary-fixed-dim {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-tertiary-10,
+        liesa-colors.$liesa-design-tertiary-80,
+    );
+}
+
+._liesa-design-light-on-tertiary-fixed {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-tertiary-fixed,
+        liesa-colors.$liesa-design-tertiary-10,
+    );
+}
+
+._liesa-design-light-on-tertiary-fixed-variant {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-tertiary-80,
+        liesa-colors.$liesa-design-tertiary-30,
+    );
+}
+
+._liesa-design-light-error {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-white,
+        liesa-colors.$liesa-design-error-40
+    )
+}
+
+._liesa-design-light-on-error {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-error-40,
+        liesa-colors.$liesa-design-white
+    )
+}
+
+._liesa-design-light-error-container {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-error-90,
+        liesa-colors.$liesa-design-error-10
+    )
+}
+
+._liesa-design-light-on-error-container {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-error-10,
+        liesa-colors.$liesa-design-error-90
+    )
+}
+
+._liesa-design-light-surface-dim {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-surface-color,
+        liesa-colors.$liesa-design-light-surface-dim
+    )
+}
+
+._liesa-design-light-surface {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-surface-color,
+        liesa-colors.$liesa-design-light-surface
+    )
+}
+// its the same
+._liesa-design-light-surface-bright {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-surface-color,
+        liesa-colors.$liesa-design-light-surface
+    )
+}
+
+._liesa-design-light-surface-container-lowest {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-surface-color,
+        liesa-colors.$liesa-design-white
+    )
+}
+
+._liesa-design-light-secondary-container-low {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-surface-color,
+        liesa-colors.$liesa-design-light-surface-container-low
+    )
+}
+
+._liesa-design-light-surface-container {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-surface-color,
+        liesa-colors.$liesa-design-light-surface-container
+    )
+}
+
+._liesa-design-light-surface-container-high {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-surface-color,
+        liesa-colors.$liesa-design-light-surface-container-high
+    )
+}
+
+._liesa-design-light-surface-container-highest {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-surface-color,
+        liesa-colors.$liesa-design-light-surface-container-highest
+    )
+}
+
+._liesa-design-light-on-surface {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-surface,
+        liesa-colors.$liesa-design-light-surface-color
+    )
+}
+
+._liesa-design-light-on-surface-var {
+    @include _liesa-design-color (
+        liesa-colors.$liesa-design-light-surface,
+        liesa-colors.$liesa-design-light-on-surface-var
+    )
+}
+
+._liesa-design-light-outline {
+    @include _liesa-design-color (
+        liesa-colors.$liesa-design-light-surface,
+        liesa-colors.$liesa-design-light-outline
+    )
+}
+
+._liesa-design-light-outline-var {
+    @include _liesa-design-color (
+        liesa-colors.$liesa-design-light-outline-variant-color,
+        liesa-colors.$liesa-design-light-outline-variant
+    )
+}
+
+._liesa-design-light-inverse-surface {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-inverse-surface-color,
+        liesa-colors.$liesa-design-light-outline-variant-color,
+    )
+}
+
+._liesa-design-light-inverse-on-surface {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-outline-variant-color,
+        liesa-colors.$liesa-design-light-inverse-surface-color
+    )
+}
+
+._liesa-design-light-inverse-primary {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-primary-30,
+        liesa-colors.$liesa-design-light-inverse-primary
+    )
+}
+
+._liesa-design-light-scrim {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-white,
+        liesa-colors.$liesa-design-black
+    )
+}
+
+._liesa-design-light-shadow {
+    @include _liesa-design-color(
+        liesa-colors.$liesa-design-light-inverse-surface-color,
+        liesa-colors.$liesa-design-black
+    )
+}

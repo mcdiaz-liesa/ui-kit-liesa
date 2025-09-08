@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
 import { LiesaButton, LiesaCheckbox } from '@cdiaz-liesa/ui-kit-liesa'
-import '@cdiaz-liesa/ui-kit-liesa'
+
 
 document.querySelector('#app').innerHTML = `
   <div>

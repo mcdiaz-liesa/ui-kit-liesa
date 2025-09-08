@@ -1,0 +1,206 @@
+._liesa-design-schema-outlined-button {
+    @include _liesa-design-light-on-primary;
+    border-color: $liesa-design-primary-60;
+}
+
+._liesa-design-schema-text-button-dark {
+    @include _liesa-design-color(
+        $color: $liesa-design-light-on-surface-var,
+        $background-color: unset,
+    );
+    border-color: unset;
+    border: unset;
+}
+
+._liesa-design-schema-background-unset-dark-outlined {
+    @include _liesa-design-color(
+        $color: $liesa-design-light-on-surface-var,
+        $background-color: unset,
+    );
+    border: $liesa-design-light-outline;
+}
+
+._liesa-design-schema-text-button-light {
+    @include _liesa-design-color(
+        $color: $liesa-design-primary-40,
+        $background-color: unset,
+    );
+    border-color: unset;
+}
+
+._liesa-design-schema-elevated-button {
+    @include _liesa-design-color(
+        $color: $liesa-design-primary-40,
+        $background-color: $liesa-design-light-surface-container-low,
+    );
+    border-color: $liesa-design-light-surface-container-low;
+}
+
+._liesa-design-schema-tonal-button {
+    @include _liesa-design-color(
+        $color: $liesa-design-dark-on-secondary,
+        $background-color: $liesa-design-secondary-90
+    );
+    border-color: $liesa-design-secondary-90;
+}
+
+//disabled
+
+ ._liesa-design-schema-disable-dark-button {
+     @include _liesa-design-color(
+         $color: $liesa-design-light-surface-color,
+         $background-color: overlay($liesa-design-m3-state-layers-light-on-surface-opacity-12, $liesa-design-m3-state-layers-light-on-surface-opacity-12),
+     );
+     border-color: $liesa-design-m3-state-layers-light-on-surface-opacity-12;
+ }
+
+ ._liesa-design-schema-disable-light-outline-button {
+        color: $liesa-design-light-surface-color;
+    //  @include _liesa-design-color(
+    //      $color: $liesa-design-light-surface-color,
+    //      $background-color: overlay($liesa-design-white, $liesa-design-m3-state-layers-light-on-surface-opacity-12),
+    //  );
+        border-color: $liesa-design-light-surface-color;
+ }
+
+ ._liesa-design-schema-disable-light-button {
+    //  @include _liesa-design-color(
+    //      $color: $liesa-design-light-surface-color,
+    //      $background-color: overlay($liesa-design-white, $liesa-design-m3-state-layers-light-on-surface-opacity-12),
+    //  );
+    color: $liesa-design-light-surface-color;
+    border-color: unset;
+}
+
+/////////////////////OPACITY/////////////////////
+._liesa-design-primary-40-layer-opacity-08 {
+    @include _liesa-design-color(
+        $color: $liesa-design-white,
+        $background-color: overlay($liesa-design-primary-40, $liesa-design-opacity-12),
+    );
+}
+
+._liesa-design-primary-40-layer-opacity-12 {
+    @include _liesa-design-color(
+        $color: $liesa-design-white,
+        $background-color: overlay($liesa-design-primary-40, $liesa-design-opacity-12),
+    );
+}
+
+._liesa-design-light-primary-layer-opacity-08 {
+    @include _liesa-design-color(
+        $color: $liesa-design-primary-40,
+        $background-color: $liesa-design-m3-state-layers-light-primary-opacity-08
+    );
+}
+
+._liesa-design-light-primary-layer-opacity-12 {
+    @include _liesa-design-color(
+        $color: $liesa-design-primary-40,
+        $background-color: $liesa-design-m3-state-layers-light-primary-opacity-12
+    );
+}
+
+._liesa-design-light-primary-layer-white-opacity-08 {
+    @include _liesa-design-color(
+        $color: $liesa-design-primary-40,
+        $background-color: overlay($liesa-design-m3-state-layers-light-primary-opacity-08, $liesa-design-white)
+    );
+}
+
+._liesa-design-light-primary-layer-white-opacity-12 {
+    @include _liesa-design-color(
+        $color: $liesa-design-primary-40,
+        $background-color: overlay($liesa-design-m3-state-layers-light-primary-opacity-12, $liesa-design-white)
+    );
+}
+
+._liesa-design-light-primary-layer-surface-container-opacity-08 {
+    @include _liesa-design-color(
+        $color: $liesa-design-primary-40,
+        $background-color: overlay($liesa-design-light-surface-container-low, $liesa-design-m3-state-layers-light-primary-opacity-08)
+    );
+}
+
+._liesa-design-light-primary-layer-surface-container-opacity-12 {
+    @include _liesa-design-color(
+        $color: $liesa-design-primary-40,
+        $background-color: overlay($liesa-design-light-surface-container-low, $liesa-design-m3-state-layers-light-primary-opacity-12)
+    );
+}
+
+._liesa-design-light-on-secondary-container-layer-opacity-08 {
+    @include _liesa-design-color(
+        $color: $liesa-design-dark-on-secondary,
+        $background-color: overlay($liesa-design-secondary-90, $liesa-design-m3-state-layers-light-on-secondary-container-opacity-08)
+    );
+}
+
+._liesa-design-light-on-secondary-container-layer-opacity-12 {
+    @include _liesa-design-color(
+        $color: $liesa-design-dark-on-secondary,
+        $background-color: overlay($liesa-design-secondary-90, $liesa-design-m3-state-layers-light-on-secondary-container-opacity-12)
+    );
+}
+
+._liesa-design-light-opacity-background-unset {
+    @include _liesa-design-color(
+        $color: unset,
+        $background-color: overlay(unset, ),
+    )
+}
+
+//fabs
+._liesa-design-fabs-primary-40-surface {
+    @include _liesa-design-color(
+        $color: $liesa-design-primary-40,
+        $background-color: $liesa-design-light-surface-container-high,
+    );
+}
+
+._liesa-design-fabs-primary-container-on-primary-container {
+    @include _liesa-design-color(
+        $color: $liesa-design-white,
+        $background-color: $liesa-design-primary-90
+    );
+}
+
+._liesa-design-fabs-tertiary-container-on-tertiary-container {
+    @include _liesa-design-color(
+        $color: $liesa-design-m3-sys-light-on-tertiary-container,
+        $background-color: $liesa-design-m3-sys-light-tertiary-container
+    );
+}
+
+//disabled fabs
+._liesa-design-fabs-disable-light-surface-container-high-light-primary-08 {
+    @include _liesa-design-color(
+        $color: $liesa-design-primary-40,
+        $background-color: overlay($liesa-design-light-surface-container-high, $liesa-design-m3-state-layers-light-primary-opacity-08),
+    );
+}
+
+._liesa-design-fabs-disable-light-on-primary-container-08-primary-90 {
+    @include _liesa-design-color(
+        $color: $liesa-design-white,
+        $background-color: overlay($liesa-design-primary-90, $liesa-design-m3-state-layers-light-on-primary-container-opacity-08),
+    );
+}
+
+._liesa-design-fabs-disable-light-on-secondary-container-08-surface-container-high {
+    @include _liesa-design-color(
+        $color: $liesa-design-dark-on-secondary,
+        $background-color: overlay($liesa-design-m3-state-layers-light-on-secondary-container-opacity-08, $liesa-design-light-surface-container-high),
+    );
+}
+
+._liesa-design-fabs-disable-light-on-tertiary-container-08-tertiary-container-high {
+    @include _liesa-design-color(
+        $color: $liesa-design-m3-sys-light-on-tertiary-container,
+        $background-color: overlay($liesa-design-m3-state-layers-light-on-tertiary-container-opacity-08, $liesa-design-m3-sys-light-tertiary-container),
+    );
+}
+
+
+
+
