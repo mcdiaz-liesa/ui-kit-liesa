@@ -21,7 +21,7 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        stage ('hello') {
+        stage('hello') {
             echo 'Hello World'
         }
         stage('Publish') {
