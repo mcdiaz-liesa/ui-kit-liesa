@@ -21,9 +21,6 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        stage('hello') {
-            echo 'Hello World'
-        }
         stage('Publish') {
             when {
                 anyOf {
