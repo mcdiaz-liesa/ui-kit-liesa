@@ -12,13 +12,17 @@ pipeline {
         }
         stage('Install') {
             steps {
-                sh 'npm ci --legacy-peer-deps'
+                dir('liesa-lib') {
+                    sh 'npm ci'
+                }
             }
         }
         stage('Build') {
             steps {
-                sh 'node --version'
-                sh 'npm run build'
+                dir('liesa-lib') {
+                    sh 'node --version'
+                    sh 'npm run build'
+                }
             }
         }
         stage('Publish') {
@@ -29,11 +33,13 @@ pipeline {
                 }
             }
             steps {
-                withCredentials([string(credentialsId: 'verdaccio-token', variable: 'NPM_TOKEN')]) {
-                    sh '''
-                        echo "${NPM_TOKEN}" > .npmrc"
-                        npm publish --registry=${REGISTRY_URL}
-                    '''
+                dir('liesa-lib') {
+                    withCredentials([string(credentialsId: 'verdaccio-token', variable: 'NPM_TOKEN')]) {
+                        sh '''
+                            echo "${NPM_TOKEN}" > .npmrc"
+                            npm publish --registry=${REGISTRY_URL}
+                        '''
+                    }
                 }
             }
         }
