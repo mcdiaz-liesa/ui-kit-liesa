@@ -36,7 +36,7 @@ pipeline {
                 dir('liesa-lib') {
                     withCredentials([string(credentialsId: 'verdaccio-token', variable: 'NPM_TOKEN')]) {
                         sh '''
-                            echo "${NPM_TOKEN}" > .npmrc"
+                            echo "${NPM_TOKEN}" > .npmrc
                             npm publish --registry=${REGISTRY_URL}
                         '''
                     }
