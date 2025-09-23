@@ -2,7 +2,7 @@
 pipeline {
     agent { docker { image 'node:22.19.0-alpine3.22' } }
     environment {
-        REGISTRY_URL = "http://localhost:4873"
+        REGISTRY_URL = "http://host.docker.internal:4873"
     }
     stages {
         stage('Checkout') {
