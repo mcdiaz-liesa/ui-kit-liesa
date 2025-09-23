@@ -13,7 +13,7 @@ pipeline {
         stage('Install') {
             steps {
                 dir('liesa-lib') {
-                    sh 'npm ci'
+                    sh 'npm install'
                 }
             }
         }
